@@ -177,22 +177,25 @@
         
         /* About Section */
         .about-content {
+            text-align:justify;
             display: flex;
             align-items: center;
             gap: 50px;
         }
         
         .profile-img {
-            flex: 1;
+            flex: 0 0 280px;          /* prevents stretching */
+            max-width: 280px;        /* controls size */
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
-        
+
         .profile-img img {
             width: 100%;
             height: auto;
             display: block;
+            object-fit: cover;
         }
         
         .about-text {
